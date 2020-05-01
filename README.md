@@ -1,4 +1,9 @@
 # Traverse a tree
+
+**Содержание:**
+- [Pre-order traversal](#Pre-order)
+   - [Итеративная реализация](#Pre-iterative) 
+
 ## Алгоритмы. Обход Дерева
 Обход дерева может быть реализован двумя методами:
 1. в глубину (Depth-first) **DFS**  
@@ -11,7 +16,7 @@
 - **In-order** 
 - **Post-order**
 
-### Pre-order traversal
+### Pre-order traversal <a name="Pre-order"></a>
 
 [Здесь](https://github.com/Francis-Morgan/traverse-a-tree/blob/master/Pre-order_traversal_iterative.py) можно увидеть итеративную реализацию прямого обхода. 
 
@@ -24,7 +29,7 @@
 
 Вершина - левое поддерево - правое поддерево
 
-##### Рассмотрим итеративную реализацию. 
+##### Рассмотрим итеративную реализацию <a name="Pre-iterative"></a>
 
 Мы создадим список-стек, который будем наполнять значениями ячеек дерева. А потом по очередности их возвращать. 
 
