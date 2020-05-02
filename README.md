@@ -2,7 +2,9 @@
 
 **Содержание:**
 - [Pre-order traversal](#Pre-order)
-   - [Итеративная реализация](#Pre-iterative) 
+   - [Итеративная реализация](#Pre-iterative)
+   - [Рекурсивная реализация](#Pre-recursive)
+   
 
 ## Алгоритмы. Обход Дерева
 Обход дерева может быть реализован двумя методами:
@@ -29,7 +31,7 @@
 
 Вершина - левое поддерево - правое поддерево
 
-##### Рассмотрим итеративную реализацию <a name="Pre-iterative"></a>
+#### Рассмотрим итеративную реализацию <a name="Pre-iterative"></a>
 
 Мы создадим список-стек, который будем наполнять значениями ячеек дерева. А потом по очередности их возвращать. 
 
@@ -78,12 +80,20 @@
             
 ```
 
+#### Рассмотрим рекурсивную реалиацию <a name="Pre-recursive"></a>
+
+[Здесь](https://github.com/Francis-Morgan/traverse-a-tree/blob/master/Pre-order_traversal.py) можно увидеть код.
+
 ##### INPUT/OUTPUT
 
 ![](https://github.com/Francis-Morgan/traverse-a-tree/blob/master/TREE%20TRAVERSE/input_output.PNG)
 
-##### СКОРОСТЬ АЛГОРИТМА
+##### СКОРОСТЬ АЛГОРИТМОВ
 
-Как можно увидеть на картинке такой обход дерева показывает довольно неплохие результаты
+Это скорость итеративной версии: 
 
 ![](https://github.com/Francis-Morgan/traverse-a-tree/blob/master/TREE%20TRAVERSE/complexity.PNG)
+
+Это скорость рекурсивной версии:
+
+![](https://github.com/Francis-Morgan/traverse-a-tree/blob/master/TREE%20TRAVERSE/complexity_rec.PNG)
