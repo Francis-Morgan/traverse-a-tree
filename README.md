@@ -84,6 +84,54 @@
 
 [Здесь](https://github.com/Francis-Morgan/traverse-a-tree/blob/master/Pre-order_traversal.py) можно увидеть код.
 
+#### Как это работает 
+
+Рассмотрим тоже самое дерево:
+
+![](https://github.com/Francis-Morgan/traverse-a-tree/blob/master/TREE%20TRAVERSE/tree.png)
+
+И код:
+
+```python
+ def PreorderTraversal(self, root):
+        arr = []
+        if root is not None:
+            arr.append(root.data)
+            arr += self.PreorderTraversal(root.left)
+            arr += self.PreorderTraversal(root.right)
+        return arr
+```
+
+Если описывать этот алгоритм словами, понять с первого раза довольно сложно. По-этому будем рассматривать алгоритм на примере этого дерева. 
+
+Сначало мы вызываем функцию **PreorderTraversal** и передаем ей корень дерева (экземпляр класса Node).
+
+Здесь инициализируем пустой список **arr**.
+
+Проходим проверку: 
+
+```python
+if root is not None:
+```
+Поскольку наш корень не имеет значение **None**, это условие выполнится, и в список **arr** добавится значение корня - **A**.
+
+Дальше следует эта строчка: 
+
+```python
+arr += self.PreorderTraversal(root.left)
+```
+Тут мы вызываем функцию **PreorderTraversal**, передавая ей левого потомка, который принадлежит корню дерева.
+
+Он пройдет тот самый маршрут, что его родитель, и будет вызвана функция **PreorderTraversal** с переданным  ей левым потомком, который имеет значение **D**.
+
+Этот узел левого потомка не имеет, сообственно он проверку не прошел и будет выполнена следующая строка:
+```python
+return arr
+```
+
+Функция возвращает список **arr**
+
+
 ##### INPUT/OUTPUT
 
 ![](https://github.com/Francis-Morgan/traverse-a-tree/blob/master/TREE%20TRAVERSE/input_output.PNG)
