@@ -144,7 +144,7 @@ arr += self.PreorderTraversal(root.left)
 arr += self.PreorderTraversal(root.right)
 ```
 
-**root - это узел со значением B!**
+**Сейчас root - это узел со значением B!**
 
 Вызываем функцию, передавая ей правого потомка этого узла. 
 
