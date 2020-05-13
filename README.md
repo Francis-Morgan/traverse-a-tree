@@ -80,7 +80,7 @@
             
 ```
 
-#### Рассмотрим рекурсивную реалиацию <a name="Pre-recursive"></a>
+## Рекурсивная реалиация <a name="Pre-recursive"></a>
 
 [Здесь](https://github.com/Francis-Morgan/traverse-a-tree/blob/master/Pre-order_traversal.py) можно увидеть код.
 
