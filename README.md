@@ -187,4 +187,18 @@ arr += self.PreorderTraversal(root.right)
 
 ## Рекурсивная реализация 
 
-[Здесь](https://github.com/Francis-Morgan/traverse-a-tree/blob/master/In-order_traversal.py) можно увидеть код
+[Здесь](https://github.com/Francis-Morgan/traverse-a-tree/blob/master/In-order_traversal.py) можно увидеть код.
+
+Рекурсивные алгоритмы довольно сложно пояснить на словах, и не запутаться. По-этому, мы будем рассматривать работу этого лгоритма на конкретном дереве, которое було представлено выше.
+
+Эта функция - реализация алгоритма.
+```python
+def in_order(self, root):
+        tree = []
+        if root:
+            tree += self.in_order(root.left)
+            tree.append(root.val)
+            tree += self.in_order(root.right)
+        return tree
+```
+
