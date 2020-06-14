@@ -4,6 +4,7 @@
 - [Pre-order traversal](#Pre-order)
    - [Итеративная реализация](#Pre-iterative)
    - [Рекурсивная реализация](#Pre-recursive)
+- [In-order traversal](#In-order)
    
 
 ## Алгоритмы. Обход Дерева
@@ -19,8 +20,7 @@
 - **Post-order** (Обратный обход)
 
 ## Pre-order traversal <a name="Pre-order"></a>
-
-[Здесь](https://github.com/Francis-Morgan/traverse-a-tree/blob/master/Pre-order_traversal_iterative.py) можно увидеть итеративную реализацию прямого обхода. 
+ 
 
 ### Как это работает?
 
@@ -40,6 +40,8 @@
 Если отслеживать значения в бинарном дереве по порядку, который у нас получился на выходе, можно понять идею алгоритма.
 
 ### Итеративная реализация <a name="Pre-iterative"></a>
+
+[Здесь](https://github.com/Francis-Morgan/traverse-a-tree/blob/master/Pre-order_traversal_iterative.py) можно увидеть итеративную реализацию прямого обхода.
 
 Мы создадим список-стек, который будем наполнять значениями ячеек дерева. А потом по очередности их возвращать. Кроме того, создадим список tree, который будет хранить значения ячеек дерево в правильной последовательности. 
 
@@ -172,3 +174,17 @@ arr += self.PreorderTraversal(root.right)
 Это скорость рекурсивной версии:
 
 ![](https://github.com/Francis-Morgan/traverse-a-tree/blob/master/TREE%20TRAVERSE/complexity_rec.PNG)
+
+## In-order traversal <a name="In-order"></a>
+
+### Как это работает?
+
+Сначала мы проверяем детей и только потом подымаемся к к родительским узлам.
+
+![](https://github.com/Francis-Morgan/traverse-a-tree/blob/master/TREE%20TRAVERSE/tree.png)
+
+Вывод этого дерева будет выглядеть так: **[D,B,G,E,A,C,H,F,I]**
+
+## Рекурсивная реализация 
+
+[Здесь можно увидеть код](https://github.com/Francis-Morgan/traverse-a-tree/blob/master/In-order_traversal.py)
